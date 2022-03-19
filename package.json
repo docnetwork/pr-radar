@@ -1,0 +1,16 @@
+{
+  "name": "pr-radar",
+  "version": "0.1.0",
+  "description": "Inspect PR's across all repos in a target organization",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Ronnei",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "github-api": "^3.4.0"
+  }
+}
