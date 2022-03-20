@@ -1,19 +1,7 @@
 import 'dotenv/config';
-import Scanner from './Scanner.mjs';
+import Scanner from './lib/Scanner.mjs';
 
-const {
-  GITHUB_API_TOKEN, ORG, TEAM,OWNER
-} = process.env;
-
-// async function getPulls(client) {
-//   const repos = await getAllRepoNames(client);
-//   const repoPulls = {};
-//   for (const repo of repos) {
-//     const { data } = await client.rest.pulls.list({ repo, owner: OWNER });
-//     repoPulls[repo] = data;
-//   }
-//   return repoPulls;
-// }
+const { GITHUB_API_TOKEN, ORG, TEAM,OWNER } = process.env;
 
 (async () => {
   try {
@@ -30,19 +18,4 @@ const {
     console.error(error);
     process.exit(1);
   }
-
-// (async () => {
-//   try {
-//     const gh = new GitHub({ token: process.GITHUB_API_TOKEN });
-//     const org = await gh.getOrganization('docnetwork');
-//     const repos = await org.getRepos();
-//     repos.data.forEach(r => console.log(r.name));
-//     // const appRepo = await gh.getRepo('docnetwork', 'app');
-//     // console.log(appRepo);
-//     // console.log(repos);
-//     process.exit(0)
-//   } catch (error) {
-//     console.error(error);
-//     process.exit(1);
-//   }
 })();
