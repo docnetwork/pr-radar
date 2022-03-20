@@ -11,8 +11,8 @@ const { GITHUB_API_TOKEN, ORG, TEAM,OWNER } = process.env;
       team: TEAM,
       owner: OWNER,
     });
-    const repoPulls = await scanner.getPulls();
-    Object.entries(repoPulls).forEach(([k, v]) => console.log(`${k}: ${v.length}`));
+
+    await scanner.scanTeamPRs();
     process.exit(0)
   } catch (error) {
     console.error(error);
