@@ -11,6 +11,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "github-api": "^3.4.0"
+    "octokit": "^1.7.1"
   }
 }
