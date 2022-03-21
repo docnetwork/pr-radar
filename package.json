@@ -1,6 +1,6 @@
 {
   "name": "pr-radar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Inspect PR's across all repos in a target organization",
   "main": "index.js",
   "type": "module",
@@ -11,6 +11,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "lodash": "^4.17.21",
     "octokit": "^1.7.1"
   }
 }
